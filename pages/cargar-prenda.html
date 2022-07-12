@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/Icons/logo-modacircular.PNG" type="image/x-icon"> <!--icono navegador href-->
+     <!--Hoja de estilos de manera externa -->
+     <link rel="stylesheet" href="../css/estilos.css">
+    <title>Cargar Prenda</title>
+</head>
+<body>
+    <!--Menú de Navegacion-->
+    <header>
+        <nav>
+            <!--Lista Desordenada-->
+            <ul>
+                <!--enlaces relativos-->
+                <li><a href="../index.html"> Quienes Somos </a></li>
+                <li><a href="./prenda-superior.html"> Prenda Superior</a></li>
+                <li><a href="#"> Prenda Inferior</a> </li>
+                <li><a href="./cargar-prenda.html"> Cargar Prenda </a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
+            </ul>
+            <!--Logo-->
+            <a href="../index.html"><img src="../assets/Icons/logo-modacircular.PNG" alt="logo-icono"></a>
+        </nav>
+    </header>
+    <!-- cierre menu de navcegacion -->
+
+    <main id="fondo_cargaprenda">
+        <section class="datos">
+            <form action="procesar.php" name="contacto" method="post">
+                <fieldset class="datos__personalesFormulario">
+                   <h2 class="datos__personales">Datos Personales</h2>
+                    <p>
+                    <label class="datos__personaleslabel">Nombre y Apellido: 
+                        <input type="text" name="Nombre" placeholder="" required class="datos__personalesinput">
+                    </label>
+                    </p>
+                    <p>
+                    <label class="datos__personaleslabel">Telefono:
+                        <input type="number" name="Telefono" placeholder="" required class="datos__personalesinput">
+                    </label>
+                    </p>
+                    <p>
+                    <label class="datos__personaleslabel">Email:
+                        <input type="email" name="Email" placeholder="hola@servidor.com.ar" required class="datos__personalesinput">
+                    </label>
+                    </p>
+                </fieldset>
+            </form>
+            <!--Espacio carga tu prenda-->
+            <form action="procesar.php" name="carga-prenda" method="post" id="datos__cargaPrenda">
+                <h2 class="datos__personales">Carga Tu prenda</h2>
+                <!--Menu Desplegable-->
+                <p>
+                    <h4 class="datos__prenda">Selecciona Genero
+                        <select name="sexo" class="select__prenda">
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="unisex">Unisex</option>
+                        </select>
+                    </h4>
+                </p>     
+                <p>
+                    <h4 class="datos__prenda"> Tipo de Prenda
+                        <select name="tipo-prenda" class="select__prenda">
+                            <option value="Superior">Superior</option>
+                            <option value="Inferior">Inferior</option>
+                        </select>
+                    </h4>
+                </p>
+
+                <p>
+                    <h4 class="datos__prenda">Selecciona Talle
+                        <select name="talle" class="select__prenda">
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="Extra-large">Extra Large</option>
+                        </select>
+                    </h4>
+                </p>
+
+                <p>
+                    <h4 class="datos__prenda">Estado de la Prenda
+                        <select name="estado" class="select__prenda">
+                            <option value="nuevo-conetiqueta">Nuevo con Etiqueta</option>
+                            <option value="nuevo-sinetiqueta">Nuevo sin Etiqueta</option>
+                            <option value="excelente-estado">Excelente Estado</option>
+                        </select>
+                    </h4>
+                </p>
+
+                <p>
+                    <h4 class="datos__prenda">Foto de la Prenda
+                        <input type="file" id="file" class="input_fotoprenda">
+                    </h4>
+                </p>
+
+                <!--Comentario-->
+                <textarea name="comentario" id="" cols="30" rows="10" class="textarea__cargarprenda">
+                COMENTARIO E INSERTAR MARCA
+                </textarea>
+
+                 <!--Boton Enviar-->
+                <p>
+                <button type="submit" class="button__cargarprenda">Enviar</button>
+                </p>
+    
+            </form>
+        </section>
+        <section>
+            <article id="carrusel-imagenes">
+                <ul class="carrusel__ul">
+                    <li><img src="../assets/carrusel-cargarprenda/imagen1.avif" alt="Imagen1" class="imagen_carrusel"></li>
+                    <li><img src="../assets/carrusel-cargarprenda/imagen2.avif" alt="Imagen2" class="imagen_carrusel"></li>
+                    <li><img src="../assets/carrusel-cargarprenda/imagen3.avif" alt="Imagen3" class="imagen_carrusel"></li>
+                    <li><img src="../assets/carrusel-cargarprenda/imagen4.avif" alt="Imagen4" class="imagen_carrusel"></li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <section class="modacircular">
+            <p>© 2022 MODA CIRCULAR</p>
+        </section>
+        <section class="redes-socialesfooter">
+            <a href=" https://api.whatsapp.com/send?phone=3512392412" target="_blank"><img src="../assets/Icons/icono-whatsapp.png" alt="icono-whatsapp"></a>
+            <a href="https://www.instagram.com/sofia.salguero/" target="_blank"><img src="../assets/Icons/icono-instagram.png" alt="icono-instagram"></a>
+            <a href="https://twitter.com/SofiaSalguero1" target="_blank"><img src="../assets/Icons/icono-twitter.png" alt="icono-twitter"></a>
+        </section>
+       
+    </footer>
+
+    
+</body>
+</html>

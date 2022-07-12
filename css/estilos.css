@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Kantumruy+Pro:wght@300&display=swap');
+ /*Index*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: rgba(85, 98, 113, 0.649);
+    scroll-behavior: smooth;
+}
+body header nav{
+    background-color:rgba(255, 20, 145, 0.354);
+    height: 50px;
+    position:fixed;
+    width: 100%;
+    height: auto;
+}
+
+body header nav li{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 1%;
+    float: left;
+    align-items: center;
+}
+
+ body header nav li a{
+    font-family: 'Kantumruy Pro', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight:500;
+    color: black;
+    text-align: center;
+    }
+
+    body header nav li a:hover{
+        color: deeppink;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    body header nav img {width: 60px;
+                        height: 60px;
+                        float: right;
+                        padding: 4px;
+    }
+
+    body main #quienes-somos {
+        width:100% ;
+        background-image: url(/img/img-descripcionQsomos.avif);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    body main #quienes-somos h1{
+        font-size: 50px;
+        font-weight: 100;
+        color:deeppink;
+        font-family:'Kantumruy Pro', sans-serif;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    
+    body main #quienes-somos p{
+        font-size: 25px;
+        font-family: 'Gentium Book Plus', serif;
+        font-weight:400;
+        color:black;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 4%;
+        padding-bottom: 8%;
+    }
+
+    body main #video-button{
+        background-image: url(/img/imagen-videobutton.avif);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100%;
+    }
+
+    body main #video-button iframe{
+        margin-left: 20%;
+        margin-top: 10%;
+        margin-bottom: 6%;
+        width: 60%;
+    }
+
+    body main #video-button button{
+        width: 20%;
+        font-size: 30px;
+        font-family:'Kantumruy Pro', sans-serif;
+        background-color:rgba(255, 20, 145, 0.682);
+        color:white;
+        margin-bottom: 4%;
+        margin-left: 20%;
+        border: 0vmin;
+        height: 60px;
+        border-radius: 8%;
+        cursor: pointer;
+    }
+    body main #video-button button:hover{
+        background-color: rgba(0, 0, 0, 0.692);
+        color:deeppink;
+        font-weight: bold;
+    }
+
+    /*footer*/
+    body footer{
+        width: 100%;
+    }
+
+    body footer .modacircular{
+        float: left;
+    }
+
+    body footer .modacircular p{
+        font-family: 'Kantumruy Pro', sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-top: 4%;
+        margin-left: 20px;
+        width: auto;
+    }
+
+    body footer .redes-socialesfooter{
+        float: right;
+        margin-right: 20px;
+    }
+
+    body footer .redes-socialesfooter a img{
+        width: 40px;
+        height: 40px;
+        padding: 2%;
+    }
+
+    body footer .redes-socialesfooter a img:hover{
+        background-color: deeppink;
+        border-radius: 40%;
+    }
+
+    /*Inicio lista de Productos*/
+    #prenda_lista{
+        background-image: url(/img/fondo-listaProductos.avif);
+    }
+    #prenda_lista h1{
+        font-family:'Kantumruy Pro', sans-serif;
+        padding-top: 6%;
+        text-align: center;
+        font-size: 40px;
+    }
+    .producto{
+        width: 22%;
+        height: 30%;
+        margin-top: 2%;
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        align-content: center;
+    }
+
+    .producto__imagen{
+        width: 14vw;
+        height: 48vh;
+        object-fit:cover;
+    }
+    .producto__titulo{
+        font-family:'Kantumruy Pro', sans-serif; 
+    }
+
+    .producto__descripcion{
+        font-family: 'Gentium Book Plus', serif;
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    .producto__precio{
+        font-family:'Kantumruy Pro', sans-serif;
+    }
+
+    .button{
+        height: 40px;
+        width: 30%;
+        margin-top: 2%;
+        background-color: rgba(255, 20, 145, 0.509);
+        border-radius: 10%;
+        border: none;
+        font-family:'Kantumruy Pro', sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .button:hover{
+        font-weight: bolder;
+        background-color: rgba(128, 128, 128, 0.454);
+        color: deeppink;
+    }
+
+    /*Inicio Carga tus Datos*/
+    #fondo_cargaprenda{
+        background-image: url(/img/fondo-listaProductos.avif);
+        display: flex;
+    }
+
+    .datos{
+        padding-top: 5%;
+        margin-left: 4%;
+        width: 100%;
+    }
+
+    .datos__personalesFormulario{
+        font-size: 20px;
+        width: 80%;
+        border-style: none;
+    }
+
+    .datos__personales{
+        font-family:'Kantumruy Pro', sans-serif;
+        margin-bottom: 2%;
+        color: deeppink;
+        font-size: 30px;
+        margin-top: 1%;
+        font-weight: lighter;
+    }
+
+    .datos__personaleslabel{
+        font-family:'Gentium Book Plus', serif;
+    }
+
+    .datos__personalesinput{
+        background-color: rgba(255, 20, 145, 0.264);
+        height: 30px;
+        width: 50%;
+        font-family:'Kantumruy Pro', sans-serif;
+        margin-bottom: 1%;
+        font-size: 20px;
+        border: none;
+    }
+
+    /*Inicia Seccion Carga tu Prenda*/
+    .datos__prenda {
+        font-family:'Gentium Book Plus', serif;
+        margin-bottom: 2px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .select__prenda{
+        background-color: rgba(255, 20, 145, 0.264);
+        height: 30px;
+        width: 30%;
+        font-family:'Kantumruy Pro', sans-serif;
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
+    .input_fotoprenda{
+        color: deeppink;
+        font-family:'Kantumruy Pro', sans-serif;
+        font-size: 90%;
+        margin-bottom: 1%;
+    }
+    .textarea__cargarprenda{
+        background-color: rgba(255, 20, 145, 0.264);
+        border-color: deeppink;
+        width: 50%;
+        font-family:'Kantumruy Pro', sans-serif;
+        font-size: 15px;
+    }
+    .button__cargarprenda{
+        height: 50px;
+        width: 20%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 14%;
+        background-color: rgba(255, 20, 145, 0.509);
+        border-radius: 8%;
+        border: none;
+        font-family:'Kantumruy Pro', sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .button__cargarprenda:hover{
+        font-weight: bolder;
+        background-color: rgba(128, 128, 128, 0.454);
+        color: deeppink;
+    }
+
+    #carrusel-imagenes{
+        width: 100%;
+        margin-top: 15vh; 
+    }
+    .carrusel__ul{
+        list-style: none;
+    }
+    .imagen_carrusel{
+        width: 60%;
+        object-fit: cover;
+    }
+    
+    /*Inicia Seccion Contacto*/
+    #contacto{
+        background-image: url(/img/fondo-listaProductos.avif);
+    }
+    .contacto__titulo{
+        padding-top: 6%;
+        text-align: center;
+        font-size: 50px;
+        font-family:'Kantumruy Pro', sans-serif;
+        color: deeppink;
+        font-weight: 500;
+    }
+    .contacto__texto{
+        text-align: center;
+        padding-left: 25%;
+        padding-right: 25%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        font-family:'Gentium Book Plus', serif;
+        font-size: 20px;
+    }
+    .palabra__circular{
+        font-family:'Kantumruy Pro', sans-serif;
+        color: deeppink;
+        font-weight: bold;
+    }
+    .contacto__lista{
+        display: inline;
+    }
+    .contacto__ul{
+        align-items: center;
+        text-align: center;
+    }
+    .contacto__logo{
+        width: 8%;
+        padding: 1%;
+    }
+    .contacto__logo:hover{
+        background-color: rgba(255, 20, 145, 0.509);
+        border-radius: 40%;
+    }
+    .contacto__imagen{
+        width: 30%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        margin-left: 35%;
+    }
