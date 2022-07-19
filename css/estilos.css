@@ -92,28 +92,35 @@ body header nav li{
         background-position: center;
         background-attachment: fixed;
         height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     body main #video-button iframe{
-        margin-left: 20%;
         margin-top: 10%;
         margin-bottom: 6%;
-        width: 60%;
+        width: 50rem;
     }
 
     body main #video-button button{
-        width: 20%;
+        width: 18rem;
         font-size: 30px;
         font-family:'Kantumruy Pro', sans-serif;
         background-color:rgba(255, 20, 145, 0.682);
         color:white;
-        margin-bottom: 4%;
-        margin-left: 20%;
+        margin: 2rem;
         border: 0vmin;
-        height: 60px;
+        height: 4rem;
         border-radius: 8%;
         cursor: pointer;
         transition: all 1s;
+    }
+    .seccion-botones{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     body main #video-button button:hover{
         background-color: rgba(0, 0, 0, 0.692);
@@ -471,20 +478,13 @@ body header nav li{
         }
         body main #video-button iframe{
             width: 100%;
-            padding: 1rem;
-            margin: 0%;
-        }
-        body main .seccion-botones{
-            display: flex;
-            justify-content:space-around;
-            margin-right: 3rem;
+            margin-top:1rem;
         }
         body main #video-button button{
             font-size: 20px;
             height: 4rem;
             width: 10rem;
-            margin-bottom: 1rem;
-            
+            margin:1rem;
         }
         /*Footer*/
 
@@ -524,9 +524,39 @@ body header nav li{
             height: 3rem;
         }
         /*Seccion Cargar Prenda*/
+        .datos{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+        }
         #carrusel-imagenes{
             display: none;
         }
-
+        .datos__personalesFormulario{
+            font-size: 15px;
+            margin-left: 2rem;
+        }
+        .datos__cargaPrenda{
+            margin: 0%;
+            padding: 2rem;
+        }
+        .datos__prenda{
+            font-size: 15px;
+        }
+        .select__prenda{
+            font-size: 15px;
+        }
+        .textarea__cargarprenda{
+            width: 80%;
+            font-size: 12px;
+        }
+        .button__cargarprenda{
+            margin: 0%;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        
+        
 
     }
