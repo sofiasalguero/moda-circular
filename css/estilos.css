@@ -145,6 +145,7 @@ body header nav li{
         width: 40px;
         height: 40px;
         padding: 2%;
+        margin-top: 4px;
     }
 
     body footer .redes-socialesfooter a img:hover{
@@ -302,15 +303,30 @@ body header nav li{
 
     #carrusel-imagenes{
         width: 100%;
-        margin-top: 15vh; 
+        margin-top:4rem;
     }
     .carrusel__ul{
+        margin-right: 4rem;
         list-style: none;
+        display: grid;
+        grid-template-areas:
+        "imagen_carrusel1 imagen_carrusel2"
+        "imagen_carrusel3 imagen_carrusel4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 4px; 
     }
+    .imagen_carrusel1{
+        grid-area:imagen_carrusel1;
+    }
+    .imagen_carrusel2{
+        grid-area:imagen_carrusel2;
+    }
+
     .imagen_carrusel{
-        width: 60%;
-        object-fit: cover;
+         width:15rem;
     }
+    
     
     /*Inicia Seccion Contacto*/
     #contacto{
@@ -497,6 +513,10 @@ body header nav li{
         .button{
             width: 8rem;
             height: 3rem;
+        }
+        /*Seccion Cargar Prenda*/
+        #carrusel-imagenes{
+            display: none;
         }
 
 
