@@ -525,9 +525,6 @@ body header nav li{
         }
         /*Seccion Cargar Prenda*/
         .datos{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
             text-align: center;
         }
         #carrusel-imagenes{
@@ -535,7 +532,11 @@ body header nav li{
         }
         .datos__personalesFormulario{
             font-size: 15px;
-            margin-left: 2rem;
+        }
+        .formDatosPersonales{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .datos__cargaPrenda{
             margin: 0%;
