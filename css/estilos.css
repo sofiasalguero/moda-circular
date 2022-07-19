@@ -12,7 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.iconos-menumobile{
+.respmenu input{
+    display: none;
+}
+.respmenu i{
     display: none;
 }
 
@@ -386,7 +389,10 @@ body header nav li{
         }
 
         /*Menu Hamburguesa*/
-        .iconos-menumobile{
+        .respmenu input{
+            display: block;
+        }
+        .respmenu i{
             display: block;
         }
         .respmenu a {
@@ -395,17 +401,19 @@ body header nav li{
             border-bottom: 2px;
         }
         .respmenu ul{
+            width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;  
         }
         .respmenu li{
             padding: 2rem;
-            margin-left: 2.5rem;
+            margin: 0%;
             margin-bottom: 1rem;
             background-color: deeppink;
-            width: 20rem;
+            width: 15rem;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
         }
         .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
             position: absolute;
@@ -418,16 +426,16 @@ body header nav li{
             height: 48px;
           }
           
-          .respmenu .fa-bars, .respmenu .fa-times {
+        .respmenu .fa-bars, .respmenu .fa-times {
             font-size: 40px;
             pointer-events: none;
           }
           
-          .respmenu input[type="checkbox"] {
+        .respmenu input[type="checkbox"] {
             opacity: 0;
           }
           
-          .respmenu {
+        .respmenu {
             color: rgba(85, 98, 113, 0.649);
             position: relative;
             background: rgba(255, 20, 145, 0.453);
@@ -435,20 +443,21 @@ body header nav li{
             height: 100%;
           }
 
-          .respmenu nav {
+        .respmenu nav{
             display: none;
             padding-top: 2rem;
             margin-top: 2.5rem;
-          }  
-          .respmenu input:checked ~ nav {
+          } 
+
+        .respmenu input:checked ~ nav{
             display: block;
-          }  
-          
-          .respmenu input:checked ~ .fa-bars {
+          } 
+
+        .respmenu input:checked ~ .fa-bars {
             display: none;
           }
           
-          .respmenu input:not(:checked) ~ .fa-times {
+        .respmenu input:not(:checked) ~ .fa-times {
             display: none;
         }
         /*Fin Menu Hamburguesa*/
