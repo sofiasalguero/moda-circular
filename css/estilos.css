@@ -123,9 +123,9 @@ body header nav li{
         justify-content: center;
     }
     body main #video-button button:hover{
-        background-color: rgba(0, 0, 0, 0.692);
-        color:deeppink;
-        font-weight: bold;
+        background-color:grey;
+        color:black;
+        font-weight: bolder;
     }
 
     /*footer*/
