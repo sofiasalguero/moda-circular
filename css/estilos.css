@@ -495,13 +495,13 @@ body header nav li{
             text-align:-webkit-center;
         }
         .producto{
-            height: 18rem;
+            height: 15rem;
             width: 8rem;
             margin: 2rem;
             
         }
         .producto__imagen{
-            height: 18rem;
+            height: 15rem;
             width: 8rem;
         }
         .producto__titulo{
