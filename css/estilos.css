@@ -11,6 +11,11 @@ html {
     background-color: rgba(85, 98, 113, 0.649);
     scroll-behavior: smooth;
 }
+
+.iconos-menumobile{
+    display: none;
+}
+
 body header nav{
     background-color:rgba(255, 20, 145, 0.354);
     height: 50px;
@@ -349,4 +354,145 @@ body header nav li{
         margin-top: 6%;
         margin-bottom: 6%;
         margin-left: 35%;
+    }
+
+    /*CSS Grids Responsive/*
+    /*Media queries teoria*/
+    @media (max-width: 768px){
+        /*INDEX*/
+        body header nav img{
+            display: none;
+        }
+
+        /*Menu Hamburguesa*/
+        .iconos-menumobile{
+            display: block;
+        }
+        .respmenu a {
+            text-decoration: none;
+            display:block;
+            border-bottom: 2px;
+        }
+        .respmenu ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .respmenu li{
+            padding: 2rem;
+            margin-left: 2.5rem;
+            margin-bottom: 1rem;
+            background-color: deeppink;
+            width: 20rem;
+            display: flex;
+            justify-content: center;
+        }
+        .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+            position: absolute;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            right: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+          }
+          
+          .respmenu .fa-bars, .respmenu .fa-times {
+            font-size: 40px;
+            pointer-events: none;
+          }
+          
+          .respmenu input[type="checkbox"] {
+            opacity: 0;
+          }
+          
+          .respmenu {
+            color: rgba(85, 98, 113, 0.649);
+            position: relative;
+            background: rgba(255, 20, 145, 0.453);
+            min-height: 40px;
+            height: 100%;
+          }
+
+          .respmenu nav {
+            display: none;
+            padding-top: 2rem;
+            margin-top: 2.5rem;
+          }  
+          .respmenu input:checked ~ nav {
+            display: block;
+          }  
+          
+          .respmenu input:checked ~ .fa-bars {
+            display: none;
+          }
+          
+          .respmenu input:not(:checked) ~ .fa-times {
+            display: none;
+        }
+        /*Fin Menu Hamburguesa*/
+        body main #quienes-somos h1{
+            font-size: 2rem;
+        }
+        body main #quienes-somos p{
+            font-size: 1rem;
+            text-align: center;
+            padding: 3rem;
+        }
+        body main #video-button iframe{
+            width: 100%;
+            padding: 1rem;
+            margin: 0%;
+        }
+        body main .seccion-botones{
+            display: flex;
+            justify-content:space-around;
+            margin-right: 3rem;
+        }
+        body main #video-button button{
+            font-size: 20px;
+            height: 4rem;
+            width: 10rem;
+            margin-bottom: 1rem;
+            
+        }
+        /*Footer*/
+
+        body footer .modacircular p{
+            font-size: 1rem;
+        }
+        body footer .redes-socialesfooter a img{
+        height: 2rem;
+        width: 2rem;
+        margin-top: 2%;
+        }
+        /*Prenda Superior*/
+        #lista_productos{
+            padding-bottom: 2rem;
+            display:grid;
+            grid-template-rows:repeat(1,4fr);
+            text-align:-webkit-center;
+        }
+        .producto{
+            height: 18rem;
+            width: 8rem;
+            margin: 2rem;
+            
+        }
+        .producto__imagen{
+            height: 18rem;
+            width: 8rem;
+        }
+        .producto__titulo{
+            font-size: 14px;
+        }
+        .producto__descripcion{
+            font-size: 10px;
+        }
+        .button{
+            width: 8rem;
+            height: 3rem;
+        }
+
+
     }

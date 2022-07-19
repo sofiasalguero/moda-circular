@@ -7,24 +7,34 @@
     <link rel="shortcut icon" href="./assets/Icons/logo-modacircular.PNG" type="image/x-icon"> <!--icono navegador-->
     <!--Hoja de estilos de manera externa -->
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <title>Moda Circular</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <!--Lista Desordenada-->
-            <ul>
-                <!--enlaces relativos-->
-                <li><a href="#"> Quienes Somos </a></li>
-                <li><a href="./pages/prenda-superior.html"> Prenda Superior</a></li>
-                <li><a href="./pages/prenda-inferior.html"> Prenda Inferior</a> </li>
-                <li><a href="./pages/cargar-prenda.html"> Cargar Prenda </a></li>
-                <li><a href="./pages/contacto.html"> Contacto </a></li>
-            </ul>
-            <!--Logo-->
-            <a href="#"><img src="./assets/Icons/logo-modacircular.PNG" alt="logo-icono"></a>
-        </nav>
-    </header>
+        <header>
+        
+            <section class="respmenu">
+                <div class="iconos-menumobile">
+                    <input type="checkbox">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                </div>
+                <nav>
+                    <!--Lista Desordenada-->
+                    <ul>
+                        <!--enlaces relativos-->
+                        <li><a href="#"> Quienes Somos </a></li>
+                        <li><a href="./pages/prenda-superior.html"> Prenda Superior</a></li>
+                        <li><a href="./pages/prenda-inferior.html"> Prenda Inferior</a> </li>
+                        <li><a href="./pages/cargar-prenda.html"> Cargar Prenda </a></li>
+                        <li><a href="./pages/contacto.html"> Contacto </a></li>
+                    </ul>
+                    <!--Logo-->
+                    <a href="#"><img src="./assets/Icons/logo-modacircular.PNG" alt="logo-icono"></a>
+                </nav>
+            </section>
+        
+        </header>
 
     <!--cierre menu de navegacion-->
     <!--fila de informacion de mi sitio-->
@@ -47,7 +57,7 @@
             <!--Video Iframe-->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/f73f10zcivg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
-             <article>
+             <article class="seccion-botones">
                     <a href="./pages/prenda-superior.html"><button>Comprar</button></a>
                     <a href="./pages/cargar-prenda.html"><button>Cargar Prenda</button></a>
             </article>
