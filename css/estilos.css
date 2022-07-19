@@ -497,6 +497,10 @@ body header nav li{
         margin-top: 2%;
         }
         /*Prenda Superior*/
+        #prenda_lista h1{
+            font-size: 2rem;
+        }
+        
         #lista_productos{
             padding-bottom: 2rem;
             display:grid;
