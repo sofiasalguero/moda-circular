@@ -39,6 +39,7 @@ body header nav li{
     font-weight:500;
     color: black;
     text-align: center;
+    transition: all 1s;
     }
 
     body header nav li a:hover{
@@ -109,6 +110,7 @@ body header nav li{
         height: 60px;
         border-radius: 8%;
         cursor: pointer;
+        transition: all 1s;
     }
     body main #video-button button:hover{
         background-color: rgba(0, 0, 0, 0.692);
@@ -201,6 +203,7 @@ body header nav li{
         font-family:'Kantumruy Pro', sans-serif;
         font-size: 20px;
         cursor: pointer;
+        transition: all 1s;
     }
     .button:hover{
         font-weight: bolder;
@@ -289,6 +292,7 @@ body header nav li{
         font-family:'Kantumruy Pro', sans-serif;
         font-size: 20px;
         cursor: pointer;
+        transition: all 1s;
     }
     .button__cargarprenda:hover{
         font-weight: bolder;
@@ -344,6 +348,7 @@ body header nav li{
     .contacto__logo{
         width: 8%;
         padding: 1%;
+        transition: all 2s;
     }
     .contacto__logo:hover{
         background-color: rgba(255, 20, 145, 0.509);
