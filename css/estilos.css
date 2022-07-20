@@ -427,7 +427,6 @@ body header nav ul{
             display: flex;
             flex-direction: column;
             border-radius: 6%;
-            /* border: groove black; */
         }
         .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
             position: absolute;
