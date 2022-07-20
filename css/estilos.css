@@ -25,14 +25,18 @@ body header nav{
     position:fixed;
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: center;
 }
 
-body header nav li{
-    display: flex;
-    margin-left: 20px;
-    margin-top: 1%;
-    float: left;
+body header nav ul{
+    display: flex; 
+    flex-direction:row;
+    justify-content: space-around;
     align-items: center;
+    list-style:none;
 }
 
  body header nav li a{
@@ -43,6 +47,7 @@ body header nav li{
     color: black;
     text-align: center;
     transition: all 1s;
+    padding: 1rem;
     }
 
     body header nav li a:hover{
@@ -53,8 +58,8 @@ body header nav li{
 
     body header nav img {width: 60px;
                         height: 60px;
-                        float: right;
-                        padding: 4px;
+                        margin-top: 6%;
+                        margin-right:10px;
     }
 
     body main #quienes-somos {
@@ -120,7 +125,7 @@ body header nav li{
     .seccion-botones{
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content:space-around;
     }
     body main #video-button button:hover{
         background-color:grey;
@@ -131,31 +136,26 @@ body header nav li{
     /*footer*/
     body footer{
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
-
-    body footer .modacircular{
-        float: left;
+    .redes-socialesfooter{
+       margin-right: 1%;
+    }
+    body footer .redes-socialesfooter a img{
+        width: 2rem;
+        margin-top:4%;   
     }
 
     body footer .modacircular p{
         font-family: 'Kantumruy Pro', sans-serif;
         font-weight: bolder;
         font-size: 20px;
-        margin-top: 4%;
-        margin-left: 20px;
         width: auto;
-    }
-
-    body footer .redes-socialesfooter{
-        float: right;
-        margin-right: 20px;
-    }
-
-    body footer .redes-socialesfooter a img{
-        width: 40px;
-        height: 40px;
-        padding: 2%;
-        margin-top: 4px;
+        margin-left: 4%;
+        width: 100%;
     }
 
     body footer .redes-socialesfooter a img:hover{
@@ -169,7 +169,7 @@ body header nav li{
     }
     #prenda_lista h1{
         font-family:'Kantumruy Pro', sans-serif;
-        padding-top: 6%;
+        padding-top: 6rem;
         text-align: center;
         font-size: 40px;
     }
@@ -229,7 +229,7 @@ body header nav li{
     }
 
     .datos{
-        padding-top: 5%;
+        margin-top:6rem;
         margin-left: 4%;
         width: 100%;
     }
@@ -313,7 +313,7 @@ body header nav li{
 
     #carrusel-imagenes{
         width: 100%;
-        margin-top:4rem;
+        margin-top:5rem;
     }
     .carrusel__ul{
         margin-right: 4rem;
@@ -343,7 +343,7 @@ body header nav li{
         background-image: url(/img/fondo-listaProductos.avif);
     }
     .contacto__titulo{
-        padding-top: 6%;
+        padding-top: 6rem;
         text-align: center;
         font-size: 50px;
         font-family:'Kantumruy Pro', sans-serif;
@@ -384,7 +384,11 @@ body header nav li{
         width: 30%;
         margin-top: 6%;
         margin-bottom: 6%;
-        margin-left: 35%;
+    }
+    .logoContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /*CSS Grids Responsive/*
@@ -414,9 +418,9 @@ body header nav li{
             align-items: center;  
         }
         .respmenu li{
-            padding: 2rem;
+            padding: 1rem;
             margin: 0%;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             background-color: deeppink;
             width: 15rem;
             display: flex;
@@ -454,6 +458,7 @@ body header nav li{
             display: none;
             padding-top: 2rem;
             margin-top: 2.5rem;
+            position:absolute;
           } 
 
         .respmenu input:checked ~ nav{
@@ -494,11 +499,12 @@ body header nav li{
         body footer .redes-socialesfooter a img{
         height: 2rem;
         width: 2rem;
-        margin-top: 2%;
+        margin-top: 4%;
         }
         /*Prenda Superior*/
         #prenda_lista h1{
             font-size: 2rem;
+            padding-top: 2rem;
         }
         
         #lista_productos{
@@ -530,6 +536,7 @@ body header nav li{
         /*Seccion Cargar Prenda*/
         .datos{
             text-align: center;
+            margin-top: 2rem;
         }
         #carrusel-imagenes{
             display: none;
@@ -560,6 +567,21 @@ body header nav li{
             margin: 0%;
             margin-bottom: 1rem;
             margin-top: 1rem;
+        }
+        /*Seccion Contacto*/
+        .contacto__titulo{
+            font-size: 2rem;
+            padding-top: 2rem;
+        }
+        .contacto__texto{
+            font-size: 1rem;
+            padding: 10px 50px 20px;
+        }
+        .contacto__logo{
+            width: 4rem;
+        }
+        .contacto__imagen{
+            width: 20rem;
         }
         
         
