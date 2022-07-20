@@ -410,6 +410,7 @@ body header nav ul{
             text-decoration: none;
             display:block;
             border-bottom: 2px;
+            font-weight: 600;
         }
         .respmenu ul{
             width: 100%;
@@ -421,10 +422,12 @@ body header nav ul{
             padding: 1rem;
             margin: 0%;
             margin-bottom: 2rem;
-            background-color: deeppink;
+            background-color: rgb(255, 109, 187);
             width: 15rem;
             display: flex;
             flex-direction: column;
+            border-radius: 6%;
+            /* border: groove black; */
         }
         .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
             position: absolute;
@@ -447,9 +450,9 @@ body header nav ul{
           }
           
         .respmenu {
-            color: rgba(85, 98, 113, 0.649);
+            color: white;
             position: relative;
-            background: rgba(255, 20, 145, 0.453);
+            background: rgb(255, 109, 187);
             min-height: 40px;
             height: 100%;
           }
