@@ -107,6 +107,7 @@ body header nav ul{
         margin-top: 10%;
         margin-bottom: 6%;
         width: 50rem;
+        height: 20rem;
     }
 
     body main #video-button button{
@@ -484,7 +485,7 @@ body header nav ul{
             padding: 3rem;
         }
         body main #video-button iframe{
-            width: 100%;
+            width:20rem;
             margin-top:1rem;
         }
         body main #video-button button{
