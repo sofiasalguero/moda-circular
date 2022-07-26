@@ -179,21 +179,24 @@ body header nav ul{
         text-align: center;
         font-size: 40px;
     }
+    #lista_productos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
     .producto{
-        width: 22%;
-        height: 30%;
+        width: 20rem;
+        height: 30rem;
         margin-top: 2%;
         list-style: none;
         text-align: center;
-        display: inline-block;
         margin-bottom: 2%;
-        margin-left: 2%;
-        align-content: center;
     }
 
     .producto__imagen{
-        width: 14vw;
-        height: 48vh;
+        width:12rem;
+        height:20rem;
         object-fit:cover;
     }
     .producto__titulo{
@@ -516,20 +519,15 @@ body header nav ul{
         }
         
         #lista_productos{
-            padding-bottom: 2rem;
-            display:grid;
-            grid-template-rows:repeat(1,4fr);
-            text-align:-webkit-center;
+            margin-top: 1rem;
+            justify-content: space-evenly;
         }
         .producto{
-            height: 15rem;
-            width: 8rem;
-            margin: 2rem;
-            
+            width: 12rem; 
+            margin-right: 1rem;
         }
         .producto__imagen{
-            height: 15rem;
-            width: 8rem;
+            width: 12rem; 
         }
         .producto__titulo{
             font-size: 14px;
