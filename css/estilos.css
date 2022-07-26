@@ -399,7 +399,7 @@ body header nav ul{
 
     /*CSS Grids Responsive/*
     /*Media queries teoria*/
-    @media (max-width: 768px){
+    @media (max-width: 576px){
         /*INDEX*/
         body header nav img{
             display: none;
