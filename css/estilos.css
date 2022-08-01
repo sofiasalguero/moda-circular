@@ -8,62 +8,32 @@
     box-sizing: border-box;
 }
 html {
-    background-color: rgba(85, 98, 113, 0.649);
     scroll-behavior: smooth;
 }
 
-.respmenu input{
-    display: none;
-}
-.respmenu i{
-    display: none;
-}
-
-body header nav{
-    background-color:rgba(255, 20, 145, 0.354);
-    height: 50px;
-    position:fixed;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-content: center;
-}
-
-body header nav ul{
-    display: flex; 
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    list-style:none;
-}
-
- body header nav li a{
-    font-family: 'Kantumruy Pro', sans-serif;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight:500;
-    color: black;
-    text-align: center;
-    transition: all 1s;
-    padding: 1rem;
+    .navbar{
+        background-color:rgba(255, 20, 145, 0.354);
     }
-
-    body header nav li a:hover{
-        color: deeppink;
-        font-size: 24px;
-        font-weight: bolder;
+    .nav-link{
+        font-family: 'Kantumruy Pro', sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight:500;
+        color: black;
+        text-align: center;
+        padding: 1rem;
+        transition: all 1s;
     }
+        .nav-link:hover{
+            color: deeppink!important;
+        }
 
-    body header nav img {width: 60px;
-                        height: 60px;
-                        margin-top: 6%;
-                        margin-right:10px;
-                        transition: all 2s;
+    .d-flex{
+        height: 3.5rem;
+        width: 3.5rem;
+        transition: all 2s;
     }
-
-        body header nav img:hover{
+        .d-flex:hover{
             transform: rotate(360deg);
         }
 
@@ -81,7 +51,7 @@ body header nav ul{
         color:deeppink;
         font-family:'Kantumruy Pro', sans-serif;
         text-align: center;
-        padding-top: 10%;
+        padding-top:4rem;
     }
 
     
@@ -94,6 +64,7 @@ body header nav ul{
         padding-right: 20%;
         padding-top: 4%;
         padding-bottom: 8%;
+        margin: 0%;
     }
 
     body main #video-button{
@@ -140,27 +111,29 @@ body header nav ul{
     }
 
     /*footer*/
-    body footer{
+    .pie-pagina{
         width: 100%;
+        height: 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        background-color:rgb(164, 164, 164);
     }
     .redes-socialesfooter{
        margin-right: 1%;
     }
     body footer .redes-socialesfooter a img{
-        width: 2rem;
-        margin-top:4%;   
+        width: 2rem;  
     }
 
     body footer .modacircular p{
         font-family: 'Kantumruy Pro', sans-serif;
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 18px;
         width: auto;
         margin-left: 4%;
+        margin-bottom: 0%;
         width: 100%;
     }
 
@@ -175,15 +148,18 @@ body header nav ul{
     }
     #prenda_lista h1{
         font-family:'Kantumruy Pro', sans-serif;
-        padding-top: 6rem;
+        padding-top: 3rem;
+        margin-bottom: 2rem;
         text-align: center;
         font-size: 40px;
+        color:  rgba(255, 20, 145, 0.509);
     }
     #lista_productos{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+        margin-bottom: 0%;
     }
     .producto{
         width: 20rem;
@@ -194,10 +170,9 @@ body header nav ul{
         margin-bottom: 2%;
     }
 
-    .producto__imagen{
-        width:12rem;
-        height:20rem;
-        object-fit:cover;
+    .card-img-top{
+        height: 24rem;
+        object-fit: cover;
     }
     .producto__titulo{
         font-family:'Kantumruy Pro', sans-serif; 
@@ -206,16 +181,19 @@ body header nav ul{
     .producto__descripcion{
         font-family: 'Gentium Book Plus', serif;
         font-weight: 200;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .producto__precio{
         font-family:'Kantumruy Pro', sans-serif;
     }
+    .card{
+        text-align: center;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
 
     .button{
-        height: 40px;
-        width: 30%;
         margin-top: 2%;
         background-color: rgba(255, 20, 145, 0.509);
         border-radius: 10%;
@@ -238,7 +216,7 @@ body header nav ul{
     }
 
     .datos{
-        margin-top:6rem;
+        margin-top:2rem;
         margin-left: 4%;
         width: 100%;
     }
@@ -322,7 +300,7 @@ body header nav ul{
 
     #carrusel-imagenes{
         width: 100%;
-        margin-top:5rem;
+        margin-top:3rem;
     }
     .carrusel__ul{
         margin-right: 4rem;
@@ -352,7 +330,7 @@ body header nav ul{
         background-image: url(../img/fondo-listaProductos.jpg);
     }
     .contacto__titulo{
-        padding-top: 6rem;
+        padding-top: 3rem;
         text-align: center;
         font-size: 50px;
         font-family:'Kantumruy Pro', sans-serif;
@@ -404,86 +382,11 @@ body header nav ul{
     /*Media queries teoria*/
     @media (max-width: 576px){
         /*INDEX*/
-        body header nav img{
+        
+        .logo {
             display: none;
         }
 
-        /*Menu Hamburguesa*/
-        .respmenu input{
-            display: block;
-        }
-        .respmenu i{
-            display: block;
-        }
-        .respmenu a {
-            text-decoration: none;
-            display:block;
-            border-bottom: 2px;
-            font-weight: 600;
-        }
-        .respmenu ul{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;  
-        }
-        .respmenu li{
-            padding: 1rem;
-            margin: 0%;
-            margin-bottom: 2rem;
-            background-color: rgb(255, 109, 187);
-            width: 15rem;
-            display: flex;
-            flex-direction: column;
-            border-radius: 6%;
-        }
-        .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-            position: absolute;
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            right: 0;
-            top: 0;
-            width: 48px;
-            height: 48px;
-          }
-          
-        .respmenu .fa-bars, .respmenu .fa-times {
-            font-size: 40px;
-            pointer-events: none;
-          }
-          
-        .respmenu input[type="checkbox"] {
-            opacity: 0;
-          }
-          
-        .respmenu {
-            color: white;
-            position: relative;
-            background: rgb(255, 109, 187);
-            min-height: 40px;
-            height: 100%;
-          }
-
-        .respmenu nav{
-            display: none;
-            padding-top: 2rem;
-            margin-top: 2.5rem;
-            position:absolute;
-          } 
-
-        .respmenu input:checked ~ nav{
-            display: block;
-          } 
-
-        .respmenu input:checked ~ .fa-bars {
-            display: none;
-          }
-          
-        .respmenu input:not(:checked) ~ .fa-times {
-            display: none;
-        }
-        /*Fin Menu Hamburguesa*/
         body main #quienes-somos h1{
             font-size: 2rem;
         }
@@ -510,7 +413,6 @@ body header nav ul{
         body footer .redes-socialesfooter a img{
         height: 2rem;
         width: 2rem;
-        margin-top: 4%;
         }
         /*Prenda Superior*/
         #prenda_lista h1{
@@ -521,6 +423,7 @@ body header nav ul{
         #lista_productos{
             margin-top: 1rem;
             justify-content: space-evenly;
+            padding-left: 0%;
         }
         .producto{
             width: 12rem; 

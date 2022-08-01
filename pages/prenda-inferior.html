@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/Icons/logo-modacircular.PNG" type="image/x-icon"> <!--icono navegador-->
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <!--Hoja de estilos de manera externa -->
      <link rel="stylesheet" href="../css/estilos.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -13,25 +15,33 @@
 <body>
 <!--Menú de Navegacion-->
     <header>
-        <section class="respmenu">
+        <section >
+            <nav class="navbar navbar-expand-lg navbar-light" >
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link" href="../index.html">Quienes Somos</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./prenda-superior.html">Prenda Superior</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Prenda Inferior</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./cargar-prenda.html">Cargar Prenda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <a href="../index.html" class="logo"><img src="../assets/Icons/logo-modacircular.PNG" alt="logo-icono" class="d-flex"></a>
+                  </div>
+                </div>
+              </nav>
             
-                <input type="checkbox" class="menu">
-                <i class="fa fa-bars"></i>
-                <i class="fa fa-times"></i>
-           
-            <nav>
-                <!--Lista Desordenada-->
-                <ul>
-                    <!--enlaces relativos-->
-                    <li><a href="../index.html"> Quienes Somos </a></li>
-                    <li><a href="./prenda-superior.html"> Prenda Superior</a></li>
-                    <li><a href="#"> Prenda Inferior</a> </li>
-                    <li><a href="./cargar-prenda.html"> Cargar Prenda </a></li>
-                    <li><a href="./contacto.html"> Contacto </a></li>
-                </ul>
-                <!--Logo-->
-                <a href="../index.html"><img src="../assets/Icons/logo-modacircular.PNG" alt="logo-icono"></a>
-            </nav>
         </section>
     </header>
 <!-- cierre menu de navcegacion -->
@@ -46,7 +56,79 @@
         <section>
             <article>
                 <ul  id="lista_productos">
-                    <li class="producto">
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-cargoverde.jpg" class="card-img-top" alt="imagen-cargoverde">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Pantalon Cargo</h5>
+                          <p class="card-text producto__descripcion">Pantalon cargo verde</p>
+                          <h3 class="producto__precio">$7.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-jeanmomblanco.jpg" class="card-img-top" alt="imagen-jeanmomblanco">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Jean Mom</h5>
+                          <p class="card-text producto__descripcion">Jean mom blanco</p>
+                          <h3 class="producto__precio">$7.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-jeanwideleg.jpg" class="card-img-top" alt="imagen-jeanwideleg">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Jean Wide Leg</h5>
+                          <p class="card-text producto__descripcion">Jean wide leg celeste</p>
+                          <h3 class="producto__precio">$6.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-pantalonrayas.jpg" class="card-img-top" alt="imagen-pantalonrayas">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Pantalon Wide Leg</h5>
+                          <p class="card-text producto__descripcion">Pantalon wide leg rayado</p>
+                          <h3 class="producto__precio">$7.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-polleratableadablanca.jpg" class="card-img-top" alt="imagen-polleratableada">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Pollera Tableada</h5>
+                          <p class="card-text producto__descripcion">Pollera tableada blanca</p>
+                          <h3 class="producto__precio">$4.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-sastreroblanco.jpg" class="card-img-top" alt="imagen-pantalonsastrero">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Pantalon Sastrero</h5>
+                          <p class="card-text producto__descripcion">Pantalon sastrero natural</p>
+                          <h3 class="producto__precio">$6.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-shortjeannegro.jpg" class="card-img-top" alt="imagen-shortjeannegro">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Short Jean</h5>
+                          <p class="card-text producto__descripcion">Short jean negro</p>
+                          <h3 class="producto__precio">$3.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 16rem;">
+                        <img src="../img/imagenes-prendainferior/imagen-shortjeanrock.jpg" class="card-img-top" alt="imagen-shortjean">
+                        <div class="card-body">
+                          <h5 class="card-title producto__titulo">Short Jean</h5>
+                          <p class="card-text producto__descripcion">Short jean celeste</p>
+                          <h3 class="producto__precio">$3.000</h3>
+                          <a href="#" class="btn btn-primary button">Comprar</a>
+                        </div>
+                      </div>
+                    <!-- <li class="producto">
                         <img src="../img/imagenes-prendainferior/imagen-cargoverde.jpg" alt="imagen-cargoverde" class="producto__imagen">
                         <h2 class="producto__titulo">Pantalon Cargo</h2>
                         <h3 class="producto__descripcion">Pantalon cargo verde</h3>
@@ -117,14 +199,14 @@
                         <button class="button">
                             Comprar
                         </button>
-                    </li>
+                    </li> -->
                 </ul>
 
             </article>
         </section>
     </main>
     <!--footer-->
-    <footer>
+    <footer class="pie-pagina">
         <section  class="modacircular">
             <p>© 2022 MODA CIRCULAR</p>
         </section>
@@ -135,7 +217,8 @@
         </section>
        
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
 </body>
 </html>
