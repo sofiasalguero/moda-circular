@@ -48,88 +48,116 @@
 
     <main id="fondo_cargaprenda">
         <section class="datos">
+            
             <form action="procesar.php" name="contacto" method="post" class="formDatosPersonales">
                 <fieldset class="datos__personalesFormulario">
                    <h2 class="datos__personales">Datos Personales</h2>
-                    <p>
-                    <label class="datos__personaleslabel">Nombre y Apellido: 
-                        <input type="text" name="Nombre" placeholder="" required class="datos__personalesinput">
-                    </label>
-                    </p>
-                    <p>
-                    <label class="datos__personaleslabel">Telefono:
-                        <input type="number" name="Telefono" placeholder="" required class="datos__personalesinput">
-                    </label>
-                    </p>
-                    <p>
-                    <label class="datos__personaleslabel">Email:
-                        <input type="email" name="Email" placeholder="hola@servidor.com.ar" required class="datos__personalesinput">
-                    </label>
-                    </p>
+                   <div class="row">
+                     <div class="col">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control datos__personalesinput" id="exampleFormControlInput1" placeholder="Nombre/Apellido">
+                        </div>
+                     </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                               <input type="number" class="form-control datos__personalesinput" id="exampleFormControlInput1" placeholder="351 1234567">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Email</label>
+                               <input type="email" class="form-control datos__personalesinput" id="exampleFormControlInput1" placeholder="hola@servidor.com.ar">
+                           </div>
+                        </div>
+                    </div>
+                    <h2 class="datos__personales">Carga Tu prenda</h2>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Selecciona Genero</label>
+                               <select name="sexo" class="select__prenda">
+                                <option value="Femenino">Femenino</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="unisex">Unisex</option>
+                            </select>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Tipo de Prenda</label>
+                               <select name="tipo-prenda" class="select__prenda">
+                                <option value="Superior">Superior</option>
+                                <option value="Inferior">Inferior</option>
+                                </select>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Selecciona Talle</label>
+                               <select name="talle" class="select__prenda">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="Extra-large">Extra Large</option>
+                            </select>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Estado de la Prenda</label>
+                               <select name="estado" class="select__prenda">
+                                    <option value="nuevo-conetiqueta">Nuevo con Etiqueta</option>
+                                    <option value="nuevo-sinetiqueta">Nuevo sin Etiqueta</option>
+                                    <option value="excelente-estado">Excelente Estado</option>
+                                </select>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                           <div class="form-group">
+                               <label for="exampleFormControlInput1" class="form-label">Foto de la Prenda</label>
+                                <input type="file" id="file" class="input_fotoprenda">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-group">
+                               <textarea name="comentario" id="" cols="30" rows="10" class="textarea__cargarprenda">
+                                
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Boton Enviar-->
+                    <div class="row">
+                        <div class="col">
+                           <div class="form-grou botonEnviar">
+                            <button type="submit" class="button__cargarprenda">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
-            <!--Espacio carga tu prenda-->
-            <form action="procesar.php" name="carga-prenda" method="post" id="datos__cargaPrenda">
-                <h2 class="datos__personales">Carga Tu prenda</h2>
-                <!--Menu Desplegable-->
-                <p>
-                    <h4 class="datos__prenda">Selecciona Genero
-                        <select name="sexo" class="select__prenda">
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="unisex">Unisex</option>
-                        </select>
-                    </h4>
-                </p>     
-                <p>
-                    <h4 class="datos__prenda"> Tipo de Prenda
-                        <select name="tipo-prenda" class="select__prenda">
-                            <option value="Superior">Superior</option>
-                            <option value="Inferior">Inferior</option>
-                        </select>
-                    </h4>
-                </p>
-
-                <p>
-                    <h4 class="datos__prenda">Selecciona Talle
-                        <select name="talle" class="select__prenda">
-                            <option value="Small">Small</option>
-                            <option value="Medium">Medium</option>
-                            <option value="Large">Large</option>
-                            <option value="Extra-large">Extra Large</option>
-                        </select>
-                    </h4>
-                </p>
-
-                <p>
-                    <h4 class="datos__prenda">Estado de la Prenda
-                        <select name="estado" class="select__prenda">
-                            <option value="nuevo-conetiqueta">Nuevo con Etiqueta</option>
-                            <option value="nuevo-sinetiqueta">Nuevo sin Etiqueta</option>
-                            <option value="excelente-estado">Excelente Estado</option>
-                        </select>
-                    </h4>
-                </p>
-
-                <p>
-                    <h4 class="datos__prenda">Foto de la Prenda
-                        <input type="file" id="file" class="input_fotoprenda">
-                    </h4>
-                </p>
-
-                <!--Comentario-->
-                <textarea name="comentario" id="" cols="30" rows="10" class="textarea__cargarprenda">
-                COMENTARIO E INSERTAR MARCA
-                </textarea>
-
-                 <!--Boton Enviar-->
-                <p>
-                <button type="submit" class="button__cargarprenda">Enviar</button>
-                </p>
+                 
     
             </form>
         </section>
-        <section>
+       
+        <section class="galeria-imagen">
             <article id="carrusel-imagenes">
                 <ul class="carrusel__ul">
                     <li><img src="../assets/carrusel-cargarprenda/imagen1.jpg" alt="Imagen1" class="imagen_carrusel imagen_carrusel1"></li>

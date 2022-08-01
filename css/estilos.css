@@ -84,13 +84,14 @@ html {
         margin-bottom: 6%;
         width: 50rem;
         height: 20rem;
+        border-radius: 8%;
     }
 
     body main #video-button button{
         width: 18rem;
         font-size: 30px;
         font-family:'Kantumruy Pro', sans-serif;
-        background-color:rgba(255, 20, 145, 0.682);
+        background-color:rgba(255, 20, 145, 0.795);
         color:white;
         margin: 2rem;
         border: 0vmin;
@@ -176,6 +177,8 @@ html {
     }
     .producto__titulo{
         font-family:'Kantumruy Pro', sans-serif; 
+        font-size: 25px;
+        color: deeppink;
     }
 
     .producto__descripcion{
@@ -186,11 +189,13 @@ html {
 
     .producto__precio{
         font-family:'Kantumruy Pro', sans-serif;
+        font-size: 22px;
     }
     .card{
         text-align: center;
         margin-right: 1rem;
         margin-bottom: 1rem;
+        background-color:transparent;
     }
 
     .button{
@@ -242,8 +247,6 @@ html {
 
     .datos__personalesinput{
         background-color: rgba(255, 20, 145, 0.264);
-        height: 30px;
-        width: 50%;
         font-family:'Kantumruy Pro', sans-serif;
         margin-bottom: 1%;
         font-size: 20px;
@@ -259,31 +262,35 @@ html {
     }
     .select__prenda{
         background-color: rgba(255, 20, 145, 0.264);
-        height: 30px;
-        width: 30%;
         font-family:'Kantumruy Pro', sans-serif;
-        margin-bottom: 1%;
         font-size: 20px;
+        width: 100%;
+        height: 2.5rem;
     }
     .input_fotoprenda{
         color: deeppink;
         font-family:'Kantumruy Pro', sans-serif;
         font-size: 90%;
-        margin-bottom: 1%;
+        margin-top: 1rem;
     }
     .textarea__cargarprenda{
         background-color: rgba(255, 20, 145, 0.264);
         border-color: deeppink;
-        width: 50%;
+        width: 100%;
         font-family:'Kantumruy Pro', sans-serif;
         font-size: 15px;
+        margin-top: 2rem;
+    }
+    .botonEnviar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .button__cargarprenda{
-        height: 50px;
-        width: 20%;
+        height: 4rem;
+        width: 6rem;
         margin-top: 2%;
         margin-bottom: 2%;
-        margin-left: 14%;
         background-color: rgba(255, 20, 145, 0.509);
         border-radius: 8%;
         border: none;
@@ -297,13 +304,20 @@ html {
         background-color: rgba(128, 128, 128, 0.454);
         color: deeppink;
     }
-
+    .galeria-imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imagen_carrusel{
+        object-fit: cover;
+        height:30rem;
+    }
     #carrusel-imagenes{
         width: 100%;
-        margin-top:3rem;
     }
     .carrusel__ul{
-        margin-right: 4rem;
+        margin-right: 2rem;
         list-style: none;
         display: grid;
         grid-template-areas:
@@ -311,7 +325,7 @@ html {
         "imagen_carrusel3 imagen_carrusel4";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 4px; 
+        gap: 0px; 
     }
     .imagen_carrusel1{
         grid-area:imagen_carrusel1;
@@ -423,20 +437,14 @@ html {
         #lista_productos{
             margin-top: 1rem;
             justify-content: space-evenly;
-            padding-left: 0%;
+            padding-left:12px;
         }
-        .producto{
-            width: 12rem; 
-            margin-right: 1rem;
-        }
-        .producto__imagen{
-            width: 12rem; 
-        }
+
         .producto__titulo{
-            font-size: 14px;
+            font-size: 25px;
         }
         .producto__descripcion{
-            font-size: 10px;
+            font-size: 15px;
         }
         .button{
             width: 8rem;
@@ -469,11 +477,9 @@ html {
             font-size: 15px;
         }
         .textarea__cargarprenda{
-            width: 80%;
             font-size: 12px;
         }
         .button__cargarprenda{
-            margin: 0%;
             margin-bottom: 1rem;
             margin-top: 1rem;
         }
