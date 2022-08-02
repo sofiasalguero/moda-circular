@@ -267,11 +267,13 @@ html {
         width: 100%;
         height: 2.5rem;
     }
+    .fotoprenda{
+        margin-top: 1rem;
+    }
     .input_fotoprenda{
         color: deeppink;
         font-family:'Kantumruy Pro', sans-serif;
         font-size: 90%;
-        margin-top: 1rem;
     }
     .textarea__cargarprenda{
         background-color: rgba(255, 20, 145, 0.264);
@@ -312,10 +314,14 @@ html {
     .imagen_carrusel{
         object-fit: cover;
         height:30rem;
+        transition:all .3s;
     }
     #carrusel-imagenes{
         width: 100%;
     }
+        .imagen_carrusel:hover{
+            transform: scale(1.1)
+        }
     .carrusel__ul{
         margin-right: 2rem;
         list-style: none;
@@ -394,6 +400,46 @@ html {
 
     /*CSS Grids Responsive/*
     /*Media queries teoria*/
+    @media (max-width: 768px){
+        .logo {
+            display: none;
+        }
+        body main #quienes-somos h1{
+            font-size: 3rem;
+        }
+        body main #quienes-somos p{
+            font-size: 1.5rem;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            text-align: center;
+            color: black;
+        }
+        body main #video-button iframe{
+            width: 42rem;
+        }
+        /*Seccion Cargar Prenda*/
+        #carrusel-imagenes{
+            display: none;
+        }
+        .formDatosPersonales{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /*Seccion Contacto*/
+        .contacto__texto{
+            font-size: 1.2rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+        .contacto__logo{
+            width: 5rem;
+        }
+        .contacto__imagen{
+            width: 22rem;
+        }
+    }
+
     @media (max-width: 576px){
         /*INDEX*/
         
@@ -407,10 +453,11 @@ html {
         body main #quienes-somos p{
             font-size: 1rem;
             text-align: center;
-            padding: 3rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
         }
         body main #video-button iframe{
-            width:20rem;
+            width:28rem;
             margin-top:1rem;
         }
         body main #video-button button{
@@ -490,7 +537,8 @@ html {
         }
         .contacto__texto{
             font-size: 1rem;
-            padding: 10px 50px 20px;
+            padding-left: 6rem;
+            padding-right: 6rem;
         }
         .contacto__logo{
             width: 4rem;
@@ -498,7 +546,19 @@ html {
         .contacto__imagen{
             width: 20rem;
         }
-        
-        
-
+    }
+    @media (max-width: 390px){
+        body main #quienes-somos p{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        body main #video-button iframe{
+            width:22rem;
+            margin-top:1rem;
+        }
+        /*Contacto*/
+        .contacto__texto{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
     }
