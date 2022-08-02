@@ -400,6 +400,19 @@ html {
 
     /*CSS Grids Responsive/*
     /*Media queries teoria*/
+    @media (min-width: 1400px){
+        #lista_productos{
+            padding-left: 18rem;
+            padding-right: 18rem;
+        }
+    }
+
+    @media (max-width: 991px){
+        .logo {
+            display: none;
+        }
+    }
+
     @media (max-width: 768px){
         .logo {
             display: none;
