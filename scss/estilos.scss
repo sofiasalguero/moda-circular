@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Kantumruy+Pro:wght@300&display=swap');
+@import "background";
+@import "fuentes";
+ /*Index*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+    .navbar{
+        background-color:$backgroundPrimario;
+    }
+    .nav-link{
+        font-family: $fuentePrimaria;
+        text-decoration: none;
+        font-size:$PXlinks;
+        font-weight:$fontweightIntermedia;
+        color:$colorfuente-secundaria;
+        text-align: center;
+        padding: 1rem;
+        transition: all 1s;
+        &:hover{
+            color:$colorfuenteHover!important;
+        }
+    }
+       
+
+    .d-flex{
+        height: 3.5rem;
+        width: 3.5rem;
+        transition: all 2s;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+        
+
+    body main #quienes-somos {
+        width:100% ;
+        background-image: url(../img/img-descripcionQsomos.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        h1{
+            font-size:$PXtitulo;
+            font-weight:$fontweightLight;
+            color:$colorfuente-primaria;
+            font-family:'Kantumruy Pro', sans-serif;
+            text-align: center;
+            padding-top:4rem;
+        }
+        p{
+            font-size:$PXtextos;
+            font-family: 'Gentium Book Plus', serif;
+            font-weight:$fontweightIntermedia;
+            color:$colorfuente-secundaria;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 4%;
+            padding-bottom: 8%;
+            margin: 0%;
+        }
+    }
+
+    body main #video-button{
+        background-image: url(../img/imagen-videobutton.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        iframe{
+            margin-top: 10%;
+            margin-bottom: 6%;
+            width: 50rem;
+            height: 20rem;
+            border-radius: 8%;
+        }
+        button{
+            width: 18rem;
+            font-size:$PXbutton;
+            font-family:'Kantumruy Pro', sans-serif;
+            background-color:$backgroundBotones;
+            color:$colortextoBotones;
+            margin: 2rem;
+            border: 0vmin;
+            height: 4rem;
+            border-radius: 8%;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover{
+                background-color:$backgroundhoverBotones;
+                color:$colorfuenteHover;
+                font-weight:$fontweightBolder;
+            }
+        
+        }
+        .seccion-botones{
+            width: 100%;
+            display: flex;
+            justify-content:space-around;
+        }
+    }
+   
+    
+    /*footer*/
+    .pie-pagina{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color:$backgroundFooter;
+        .redes-socialesfooter{
+            margin-right: 1%;
+        }
+        a img{
+            width: 2rem;
+            transition: all 1s;
+            &:hover{
+                background-color: $backgroundhoverImagenes;
+                border-radius: 40%;
+            }
+        }
+        .modacircular p{
+            font-family: 'Kantumruy Pro', sans-serif;
+            font-weight: $fontweightBolder;
+            font-size:$PXfooter;
+            width: auto;
+            margin-left: 4%;
+            margin-bottom: 0%;
+            width: 100%;
+        }
+    }
+
+    /*Inicio lista de Productos*/
+    #prenda_lista{
+        background-image: url(../img/fondo-listaProductos.jpg);
+        h1{
+            font-family:$fuentePrimaria;
+            padding-top: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size:$PXtitulopages;
+            color:$colorfuenteCatalogo;
+        }
+        #lista_productos{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 0%;
+            .card{
+                text-align: center;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+                background-color:transparent;
+                .card-img-top{
+                    height: 24rem;
+                    object-fit: cover;
+                }
+                .producto__titulo{
+                    font-family:$fuentePrimaria; 
+                    font-size:$PXtextos;
+                    color:$colorfuente-primaria;
+                }
+                .producto__descripcion{
+                    font-family:$fuenteSecundaria;
+                    font-weight:$fontweightLight;
+                    font-size:$PXcardsDescripcion;
+                }
+                .producto__precio{
+                    font-family:$fuentePrimaria;
+                    font-size:$PXcardsPrecios;
+                }
+                .button{
+                    margin-top: 2%;
+                    background-color: $backgroundBotonesCatalogo;
+                    border-radius: 10%;
+                    border:$borderTransparente;
+                    font-family:$fuentePrimaria;
+                    font-size:$PXlinks;
+                    cursor: pointer;
+                    transition: all 1s;
+                    &:hover{
+                        font-weight:$fontweightBolder;
+                        background-color: $backgroundhoverBotones;
+                        color:$colorfuenteHover;
+                    }
+                }
+            }
+           
+        }
+    }
+    /*Inicio Carga tus Datos*/
+    #fondo_cargaprenda{
+        background-image: url(../img/fondo-listaProductos.jpg);
+        display: flex;
+        .datos{
+            margin-top:2rem;
+            margin-left: 4%;
+            width: 100%;
+            .datos__personalesFormulario{
+                font-size: 20px;
+                width: 80%;
+                border-style: none;
+                .datos__personales{
+                    font-family:$fuentePrimaria;
+                    margin-bottom: 2%;
+                    color:$colorfuente-primaria;
+                    font-size:$PXdatosTitulo;
+                    margin-top: 1%;
+                    font-weight:$fontweightLight;
+                }
+                .datos__personalesinput{
+                    background-color:$backgroundForm;
+                    font-family:$fuentePrimaria;
+                    margin-bottom: 1%;
+                    font-size:$PXlinks;
+                    border:$borderTransparente;
+                }
+            }
+        }
+        .select__prenda{
+            background-color:$backgroundForm;
+            font-family:$fuentePrimaria;
+            font-size:$PXlinks;
+            width: 100%;
+            height: 2.5rem;
+            border-color:$borderTransparente;
+        }
+        .fotoprenda{
+            margin-top: 1rem;
+            .input_fotoprenda{
+                color:$colorfuente-primaria;
+                font-family:$fuentePrimaria;
+                font-size:$PXinput;
+            }
+        }
+        .textarea__cargarprenda{
+            background-color:$backgroundForm;
+            border-color:$colorBorder;
+            width: 100%;
+            font-family:$fuentePrimaria;
+            font-size:$PXcardsDescripcion;
+            margin-top: 2rem;
+        }
+        .botonEnviar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .button__cargarprenda{
+                height: 4rem;
+                width: 6rem;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                background-color: $backgroundBotonesCatalogo;
+                border-radius: 8%;
+                border: none;
+                font-family:$fuentePrimaria;
+                font-size:$PXlinks;
+                cursor: pointer;
+                transition: all 1s;
+                &:hover{
+                    font-weight:$fontweightBolder;
+                    background-color:$backgroundhoverBotones;
+                    color:$colorfuenteHover;
+                }
+            }
+        }
+    }
+    .galeria-imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        #carrusel-imagenes{
+            width: 100%;
+            .carrusel__ul{
+                margin-right: 2rem;
+                list-style: none;
+                display: grid;
+                grid-template-areas:
+                "imagen_carrusel1 imagen_carrusel2"
+                "imagen_carrusel3 imagen_carrusel4";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0px;
+                .imagen_carrusel{
+                    width:15rem;
+                    object-fit: cover;
+                    height:30rem;
+                    transition:all .3s;
+                    &:hover{
+                        transform: scale(1.1)
+                    }
+                }
+                .imagen_carrusel1{
+                    grid-area:imagen_carrusel1;
+                }
+                .imagen_carrusel2{
+                    grid-area:imagen_carrusel2;
+                } 
+            }
+        }
+    }
+    
+    /*Inicia Seccion Contacto*/
+    #contacto{
+        background-image: url(../img/fondo-listaProductos.jpg);
+        .contacto__titulo{
+            padding-top: 3rem;
+            text-align: center;
+            font-size:$PXtitulo;
+            font-family:$fuentePrimaria;
+            color:$colorfuente-primaria;
+            font-weight:$fontweightIntermedia;
+        }
+        .contacto__texto{
+            text-align: center;
+            padding-left: 25%;
+            padding-right: 25%;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            font-family:$fuenteSecundaria;
+            font-size:$PXlinks;
+            .palabra__circular{
+                font-family:$fuentePrimaria;
+                color:$colorfuente-primaria;
+                font-weight:$fontweightBolder;
+            }
+        }
+        .contacto__ul{
+            align-items: center;
+            text-align: center;
+            .contacto__lista{
+                display: inline;
+            }
+            .contacto__logo{
+                width: 7rem;
+                padding: 1%;
+                transition: all 2s;
+                &:hover{
+                    background-color:$backgroundBotonesCatalogo;
+                    border-radius: 40%;
+                }
+            }
+        }
+        .logoContacto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .contacto__imagen{
+                width: 24rem;
+                margin-top: 6%;
+                margin-bottom: 6%;
+            }
+        }
+    }
+    
+    /*CSS Grids Responsive/*
+    /*Media queries teoria*/
+    @media (min-width: 1400px){
+        #lista_productos{
+            padding-left: 18rem;
+            padding-right: 18rem;
+        }
+    }
+
+    @media (max-width: 991px){
+        .logo {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px){
+        .logo {
+            display: none;
+        }
+
+        body main{
+            #quienes-somos{
+                h1{
+                    font-size:$PXtabletTitulo;
+                }
+                p{
+                    font-size:$PXtabletDescripcion;
+                    padding-left: 6rem;
+                    padding-right: 6rem;
+                    text-align: center;
+                }
+            } 
+            #video-button iframe{
+                width: 42rem;
+            }
+        } 
+
+        /*Seccion Cargar Prenda*/
+        #carrusel-imagenes{
+            display: none;
+        }
+        .formDatosPersonales{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /*Seccion Contacto*/
+        .contacto__texto{
+            font-size:$PXtabletcontacto;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+        .contacto__logo{
+            width: 5rem;
+        }
+        .contacto__imagen{
+            width: 22rem;
+        }
+    }
+
+    @media (max-width: 576px){
+        /*INDEX*/
+        
+        .logo {
+            display: none;
+        }
+
+        body main #quienes-somos{
+            h1{
+                font-size:$PXphoneTitulo;
+            }
+            p{
+                font-size:$PXphoneDescripcion;
+                text-align: center;
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        } 
+        body main #video-button{ 
+            iframe{
+            width:28rem;
+            margin-top:1rem;
+            }
+            button{
+                font-size:$PXlinks;
+                height: 4rem;
+                width: 10rem;
+                margin:1rem;
+            }
+        }
+
+        /*Footer*/
+
+        body footer{ 
+            .modacircular p{
+            font-size:$PXphoneDescripcion;
+            }
+            .redes-socialesfooter a img{
+            height: 2rem;
+            width: 2rem;
+            }
+        }
+        /*Prenda Superior*/
+        #prenda_lista{ 
+            h1{
+            font-size:$PXphoneTitulo;
+            padding-top: 2rem;
+            }
+            #lista_productos{
+                margin-top: 1rem;
+                justify-content: space-evenly;
+                padding-left:12px;
+                .producto__titulo{
+                    font-size:$PXtextos;
+                }
+                .producto__descripcion{
+                    font-size:$PXcardsDescripcion;
+                }
+                .button{
+                    width: 8rem;
+                    height: 3rem;
+                }
+            }
+        }
+        
+        /*Seccion Cargar Prenda*/
+        .datos{
+            text-align: center;
+            margin-top: 2rem;
+            .formDatosPersonales{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .datos__personalesFormulario{
+                    font-size:$PXcardsDescripcion;
+                }
+            }
+            .select__prenda{
+                font-size:$PXcardsDescripcion;
+            }
+            .textarea__cargarprenda{
+                font-size:$PXphoneTextarea;
+            }
+            .button__cargarprenda{
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+           
+        }
+        #carrusel-imagenes{
+            display: none;
+        }
+        
+        /*Seccion Contacto*/
+        .contacto__titulo{
+            font-size:$PXphoneTitulo;
+            padding-top: 2rem;
+        }
+        .contacto__texto{
+            font-size:$PXphoneDescripcion;
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+        #contacto{
+            .contacto__ul{
+                .contacto__logo{
+                width: 5rem;
+                }
+            }
+        }
+        
+        .contacto__imagen{
+            width: 20rem;
+        }
+    }
+    @media (max-width: 390px){
+        body main #quienes-somos p{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        body main #video-button iframe{
+            width:22rem;
+            margin-top:1rem;
+        }
+        /*Contacto*/
+        #contacto{
+            .contacto__texto{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                }
+            .contacto__ul{
+                .contacto__logo{
+                width: 4rem;
+                }
+            }
+            .logoContacto{
+                .contacto__imagen{
+                    width: 15rem;
+                }
+            }
+        }
+     
+    }
