@@ -88,8 +88,8 @@ body main #video-button {
 body main #video-button iframe {
   margin-top: 10%;
   margin-bottom: 6%;
-  width: 50rem;
   height: 20rem;
+  width: 50rem;
   border-radius: 8%;
 }
 body main #video-button button {
@@ -137,6 +137,12 @@ body main #video-button .seccion-botones {
   background-color: deeppink;
   border-radius: 40%;
 }
+.pie-pagina :hover.logoWhatsaap {
+  background-color: #67F05A;
+}
+.pie-pagina :hover.logoTwitter {
+  background-color: #58c9e6;
+}
 .pie-pagina .modacircular p {
   font-family: "Kantumruy Pro", sans-serif;
   font-weight: Bolder;
@@ -177,7 +183,7 @@ body main #video-button .seccion-botones {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#prenda_lista #lista_productos .card .producto__titulo {
+#prenda_lista #lista_productos .card .producto__titulo, #prenda_lista #lista_productos .card .producto__precio {
   font-family: "Kantumruy Pro", sans-serif;
   font-size: 25px;
   color: deeppink;
@@ -186,10 +192,6 @@ body main #video-button .seccion-botones {
   font-family: "Gentium Book Plus", serif;
   font-weight: 100;
   font-size: 15px;
-}
-#prenda_lista #lista_productos .card .producto__precio {
-  font-family: "Kantumruy Pro", sans-serif;
-  font-size: 22px;
 }
 #prenda_lista #lista_productos .card .button {
   margin-top: 2%;
@@ -465,7 +467,7 @@ body main #video-button .seccion-botones {
     justify-content: space-evenly;
     padding-left: 12px;
   }
-  #prenda_lista #lista_productos .producto__titulo {
+  #prenda_lista #lista_productos .producto__titulo, #prenda_lista #lista_productos .card .producto__precio {
     font-size: 25px;
   }
   #prenda_lista #lista_productos .producto__descripcion {

@@ -51,7 +51,7 @@ html {
             font-size:$PXtitulo;
             font-weight:$fontweightLight;
             color:$colorfuente-primaria;
-            font-family:'Kantumruy Pro', sans-serif;
+            font-family:$fuentePrimaria;
             text-align: center;
             padding-top:4rem;
         }
@@ -78,11 +78,14 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @mixin iframe-size($height, $width) {
+            height: $height;
+            width: $width;
+        }
         iframe{
             margin-top: 10%;
             margin-bottom: 6%;
-            width: 50rem;
-            height: 20rem;
+            @include iframe-size(20rem,50rem);
             border-radius: 8%;
         }
         button{
@@ -132,6 +135,16 @@ html {
                 border-radius: 40%;
             }
         }
+        $colorhover:(
+            twitter:#58c9e6,
+            whatsaap:#67F05A,
+        );
+        :hover.logoWhatsaap{
+            background-color: map-get($colorhover,whatsaap);
+        }
+        :hover.logoTwitter{
+            background-color: map-get($colorhover,twitter);
+        }
         .modacircular p{
             font-family: 'Kantumruy Pro', sans-serif;
             font-weight: $fontweightBolder;
@@ -180,8 +193,7 @@ html {
                     font-size:$PXcardsDescripcion;
                 }
                 .producto__precio{
-                    font-family:$fuentePrimaria;
-                    font-size:$PXcardsPrecios;
+                    @extend.producto__titulo;
                 }
                 .button{
                     margin-top: 2%;
