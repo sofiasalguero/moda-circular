@@ -534,7 +534,7 @@ body main #video-button .seccion-botones {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  #contacto ul .contacto__ul {
+  #contacto .contacto__ul {
     padding-left: 0%;
   }
   #contacto .logoContacto .contacto__imagen {
