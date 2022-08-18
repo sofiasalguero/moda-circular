@@ -569,8 +569,10 @@ html {
             margin-top:1rem;
         }
         /*Cargar Prenda*/
-        
         #fondo_cargaprenda{ 
+            .select__prenda{
+                color: $colorfuente-primaria;
+            }
             .fotoprenda{
                 color: $colorfuente-primaria;
                 font-family: $fuentePrimaria; 

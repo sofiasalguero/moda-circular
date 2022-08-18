@@ -535,6 +535,9 @@ body main #video-button .seccion-botones {
     margin-top: 1rem;
   }
   /*Cargar Prenda*/
+  #fondo_cargaprenda .select__prenda {
+    color: deeppink;
+  }
   #fondo_cargaprenda .fotoprenda {
     color: deeppink;
     font-family: "Kantumruy Pro", sans-serif;
