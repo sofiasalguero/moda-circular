@@ -250,10 +250,14 @@ body main #video-button .seccion-botones {
 #fondo_cargaprenda .fotoprenda {
   margin-top: 1rem;
 }
+#fondo_cargaprenda .fotoprenda .form-control {
+  border-color: rgba(255, 20, 145, 0.264);
+}
 #fondo_cargaprenda .fotoprenda .input_fotoprenda {
   color: deeppink;
   font-family: "Kantumruy Pro", sans-serif;
   font-size: 80%;
+  background-color: transparent;
 }
 #fondo_cargaprenda .textarea__cargarprenda {
   background-color: rgba(255, 20, 145, 0.264);
@@ -533,10 +537,6 @@ body main #video-button .seccion-botones {
   #fondo_cargaprenda .fotoprenda {
     color: deeppink;
     font-family: "Kantumruy Pro", sans-serif;
-  }
-  #fondo_cargaprenda .fotoprenda .input_fotoprenda {
-    color: transparent;
-    width: 10rem;
   }
   /*Contacto*/
   #contacto .contacto__texto {

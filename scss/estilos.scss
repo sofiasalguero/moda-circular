@@ -253,10 +253,14 @@ html {
         }
         .fotoprenda{
             margin-top: 1rem;
+            .form-control{
+                border-color: $backgroundForm;
+            }
             .input_fotoprenda{
-                color:$colorfuente-primaria;
+                color:$colorfuenteHover;
                 font-family:$fuentePrimaria;
                 font-size:$PXinput;
+                background-color:$borderTransparente;
             }
         }
         .textarea__cargarprenda{
@@ -569,10 +573,6 @@ html {
             .fotoprenda{
                 color: $colorfuente-primaria;
                 font-family: $fuentePrimaria; 
-                .input_fotoprenda{
-                color:transparent;
-                width: 10rem;
-                }
             }
         }
         /*Contacto*/
