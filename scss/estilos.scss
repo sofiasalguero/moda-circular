@@ -563,15 +563,32 @@ html {
             width:22rem;
             margin-top:1rem;
         }
+        /*Cargar Prenda*/
+        
+        #fondo_cargaprenda{ 
+            .fotoprenda{
+                color: $colorfuente-primaria;
+                font-family: $fuentePrimaria; 
+                .input_fotoprenda{
+                color:transparent;
+                width: 10rem;
+                }
+            }
+        }
         /*Contacto*/
         #contacto{
             .contacto__texto{
-                padding-left: 2rem;
-                padding-right: 2rem;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
                 }
             
             .contacto__ul{
                 padding-left: 0%;
+            }
+            .contacto__ul{
+                .contacto__logo{
+                    width: 4rem;
+                }
             }
             
             .logoContacto{
