@@ -91,13 +91,14 @@ html {
         button{
             width: 18rem;
             font-size:$PXbutton;
-            font-family:'Kantumruy Pro', sans-serif;
+            font-family:$fuentePrimaria;
+            font-weight:$fontweightLight;
             background-color:$backgroundBotones;
             color:$colortextoBotones;
             margin: 2rem;
             border: 0vmin;
             height: 4rem;
-            border-radius: 8%;
+            border-radius: 5%;
             cursor: pointer;
             transition: all 1s;
             &:hover{

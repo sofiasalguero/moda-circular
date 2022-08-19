@@ -57,7 +57,7 @@ body main #quienes-somos {
 body main #quienes-somos h1 {
   font-size: 50px;
   font-weight: 100;
-  color: deeppink;
+  color: rgb(251, 65, 164);
   font-family: "Kantumruy Pro", sans-serif;
   text-align: center;
   padding-top: 4rem;
@@ -96,12 +96,13 @@ body main #video-button button {
   width: 18rem;
   font-size: 30px;
   font-family: "Kantumruy Pro", sans-serif;
+  font-weight: 100;
   background-color: rgba(255, 20, 145, 0.795);
   color: white;
   margin: 2rem;
   border: 0vmin;
   height: 4rem;
-  border-radius: 8%;
+  border-radius: 5%;
   cursor: pointer;
   transition: all 1s;
 }
@@ -186,7 +187,7 @@ body main #video-button .seccion-botones {
 #prenda_lista #lista_productos .card .producto__titulo, #prenda_lista #lista_productos .card .producto__precio {
   font-family: "Kantumruy Pro", sans-serif;
   font-size: 25px;
-  color: deeppink;
+  color: rgb(251, 65, 164);
 }
 #prenda_lista #lista_productos .card .producto__descripcion {
   font-family: "Gentium Book Plus", serif;
@@ -227,7 +228,7 @@ body main #video-button .seccion-botones {
 #fondo_cargaprenda .datos .datos__personalesFormulario .datos__personales {
   font-family: "Kantumruy Pro", sans-serif;
   margin-bottom: 2%;
-  color: deeppink;
+  color: rgb(251, 65, 164);
   font-size: 30px;
   margin-top: 1%;
   font-weight: 100;
@@ -335,7 +336,7 @@ body main #video-button .seccion-botones {
   text-align: center;
   font-size: 50px;
   font-family: "Kantumruy Pro", sans-serif;
-  color: deeppink;
+  color: rgb(251, 65, 164);
   font-weight: 500;
 }
 #contacto .contacto__texto {
@@ -349,7 +350,7 @@ body main #video-button .seccion-botones {
 }
 #contacto .contacto__texto .palabra__circular {
   font-family: "Kantumruy Pro", sans-serif;
-  color: deeppink;
+  color: rgb(251, 65, 164);
   font-weight: Bolder;
 }
 #contacto .contacto__ul {
@@ -536,10 +537,10 @@ body main #video-button .seccion-botones {
   }
   /*Cargar Prenda*/
   #fondo_cargaprenda .select__prenda {
-    color: deeppink;
+    color: rgb(251, 65, 164);
   }
   #fondo_cargaprenda .fotoprenda {
-    color: deeppink;
+    color: rgb(251, 65, 164);
     font-family: "Kantumruy Pro", sans-serif;
   }
   /*Contacto*/
