@@ -388,9 +388,36 @@ html {
     /*CSS Grids Responsive/*
     /*Media queries teoria*/
     @media (min-width: 1400px){
+        /*Index*/ 
+        body main{
+            #quienes-somos{
+                p{
+                    padding-left: 30rem;
+                    padding-right: 30rem;
+                    text-align: center;
+                }
+            } 
+            #video-button iframe{
+                width: 70rem;
+                height: 30rem;
+            }
+        } 
         #lista_productos{
-            padding-left: 18rem;
-            padding-right: 18rem;
+            padding-left: 17rem;
+            padding-right: 17rem;
+        }
+        /*Seccion Contacto*/
+        #contacto{
+            .contacto__ul{
+                .contacto__logo{
+                    width: 8.5rem;
+                }
+            } 
+            .logoContacto{
+                .contacto__imagen{
+                    width: 35rem;
+                }
+            }
         }
     }
 
